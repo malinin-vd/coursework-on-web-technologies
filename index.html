@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AutoLive</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="shortcut icon" href="style/img/title.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		        $("a[href^='#']").click(function(){
+		                var _href = $(this).attr("href");
+		                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		                return false;
+		        });
+		});
+	</script>
+</head>
+<body>
+	<header class="header" id="home">
+		<div class="container">
+			<div class="header_inner">
+				<div class="header_logo">AutoLive</div>
+				<nav class="nav">
+					<a class="nav_link" href="index.html">Главная</a>
+					<a class="nav_link" href="about.html">О компании</a>
+					<a class="nav_link" href="gallery.html">Галерея</a>
+					<a class="nav_link" href="contact.html">Контакты</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="intro">
+		<div class="container">
+			<div class="intro_inner">
+				<div class="intro_title">
+					<h1>Продай авто</h1>
+					<h1 class="car_now">Прямо сейчас</h1>
+				</div>
+			</div>
+			<div class="intro_form">
+				<div class="intro_form_title">
+					<p>Обратный звонок</p>
+				</div>
+				<form name="callback">
+					<div class="intro_input">
+						<input type="text" name="name" placeholder="Ваше имя">
+						<input type="text" name="email" placeholder="Email адрес">
+						<input type="text" name="phone" placeholder="Номер телефона">
+						<input type="text" name="country" placeholder="Город">
+					</div>
+					<div class="intro_button">
+						<span class="button_submit" onclick="return validateForm()">Заказать</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="table_of_contents">
+		<div class="container">
+			<div class="table_of_contents_logo">
+				<h1>Оглавление</h1>
+			</div>
+			<div class="table_of_contents_nav">
+				<ul>
+					<li><a href="#home" id="link">Главная</a></li>
+					<li><a href="#sell_car" id="link">Как быстро продать авто?</a></li>
+					<li><a href="#cheak_list" id="link">Чек-лист для составления правильного объявления</a></li>
+					<li><a href="#trade-in" id="link">Расчет стоимости выкупа авто в trade-in</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="carprice" id="sell_car">
+		<div class="container">
+			<div class="sell">
+				<h1 class="sell_car_logo">Как быстро продать авто?</h1>
+			</div>
+			<div class="sell_car">
+				<div class="sell_line1">
+					<div class="car_wash">
+						<h4 class="wash">Помойте машину</h4>
+						<p class="wash_intro">Можно сделать это самому, но лучше съездить на мойку</p>
+					</div>
+					<div class="car_wash">
+						<h4 class="wash">Вымойте двигатель</h4>
+						<p class="wash_intro">Лучше за несколько недель до продажи, чтобы он успел запылиться и своим блеском не вызывал подозрений у покупателей</p>
+					</div>
+					<div class="car_wash">
+						<h4 class="wash">Сделайте полировку кузова</h4>
+						<p class="wash_intro">Это особенно актуально для авто тёмного цвета, на которых отчётливо видно микроцарапины</p>
+					</div>
+				</div>
+				<div class="sell_line2">
+					<div class="car_wash1">
+						<h4 class="wash">Уберитесь в салоне</h4>
+						<p class="wash_intro">Протрите пыль, отполируйте приборную панель, пропылесосьте сиденья, помойте коврики, уберите всё ненужное из бардачка, почистите пепельницу</p>
+					</div>
+					<div class="car_wash1">
+						<h4 class="wash">Наведите порядок в багажнике</h4>
+						<p class="wash_intro">Пропылесосьте, уберите весь хлам, повесьте освежитель</p>
+					</div>
+					<div class="car_wash1">
+						<h4 class="wash">Устраните неисправности</h4>
+						<p class="wash_intro">Устраните неисправности, которые бросаются в глаза перегоревшие лампы поворотников, течь тосола или стуки в подвеске</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="advert" id="cheak_list">
+		<div class="container">
+			<div class="ad_car">
+				<h1 class="ad_car_logo">Чек-лист для составления правильного объявления</h1>
+			</div>
+			<div class="ad_check_list">
+				<ol>
+					<li><b>Базовая информация</b>: модель, тип кузова, год выпуска, цвет, объём двигателя, тип трансмиссии, пробег. В объявлениях на сайтах всё это выбирается из готовой формы.</li>
+					<li><b>Комплектация.</b> Указывайте все опции и дополнительное оборудование (кожаный салон, климат-контроль, электропривод зеркал, подогрев сидений, аудиоподготовка, подушки безопасности).</li>
+					<li><b>Заменённые детали.</b> Перечень работ и заменённых узлов за последние год-два. Указывайте всё, кроме расходников. Если возраст машины менее трёх лет, лучше этот пункт пропустить.</li>
+					<li><b>Бонусы и подарки</b>: комплект шин, коврики, инструменты. Описывайте всё, что отдаётся с машиной в придачу.</li>
+					<li><b>Цена и контакты. </b>Обязательно укажите часы, в которые вы доступны, и напишите, уместен ли торг.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="trade_in" id="trade-in">
+		<div class="container">
+			<div>
+				<h1 class="trade_in_logo">Расчет стоимости выкупа авто в trade-in</h1>
+			</div>
+			<div class="trade_in_form">
+				<div class="form_trade_in">
+					<div class="form_trade_in_title">
+						<p>Trade-in</p>
+					</div>
+					<form name="trade_in_value">
+						<div class="trade_in_input">
+							<input type="text" name="car_make" placeholder="Марка машины">
+							<input type="text" name="car_name" placeholder="Название машины">
+							<input type="text" name="cost_new_car" placeholder="Цена покупки">
+							<input type="text" name="car_mileage" placeholder="Пробег (км)">
+						</div>
+						<div class="trade_in_button">
+							<span class="trade_in_submit" onclick="return validateFormTradeIn()">Рассчитать</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="script/script.js"></script>
+</body>
+</html>
